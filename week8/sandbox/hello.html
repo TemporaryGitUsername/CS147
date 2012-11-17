@@ -63,7 +63,9 @@
 		<script type="text/javascript">	
 		
 		$(document).unbind('pageshow');
-		$(document).bind('pageshow', function(event){ 
+		$(document).bind('pageshow', function(event){
+$("#popupPanel").popup({history:false}); 
+$("#popupPanel").popup("open");
 			$( "#popupPanel" ).on({
 		    popupbeforeposition: function() {
 		        var h = $( window ).height();
